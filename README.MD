@@ -38,6 +38,8 @@ To get a local copy up and running, follow these simple steps:
 3. **Open HTML Files**
 
    Open any of the `.html` files in your preferred web browser to view and interact with the projects.
+   
+***[Sample Document](./SamirXYZ.docx)***
 
 ## Technologies Used
 
@@ -45,6 +47,7 @@ To get a local copy up and running, follow these simple steps:
 - **CSS3**
 - **JavaScript**
 - **Git & GitHub**
+
 
 ## Author
 

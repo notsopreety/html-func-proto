@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samir-PANRV/Greatest Number</title>
+</head>
+<body>
+    <h2>Enter Three Numbers</h2>
+    <input type="number" id="n1" placeholder="Enter first number">
+    <input type="number" id="n2" placeholder="Enter second number">
+    <input type="number" id="n3" placeholder="Enter third number">
+    <button onclick="findLargest(n1.value, n2.value, n3.value)">Find Largest</button>
+    <script>
+        function findLargest(a, b, c) {
+            alert("The largest number is: " + Math.max(a, b, c));
+        }
+    </script>
+</body>
+</html>

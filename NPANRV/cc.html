@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samir-NPANRV/Click Counter</title>
+</head>
+<body>
+    <button onclick="incrementCount()">Click Me</button>
+    <p>Button clicked <span id="clickCount">0</span> times.</p>
+    <script>
+        let count = 0;  
+        function incrementCount() {
+            count++; 
+            document.getElementById("clickCount").innerText = count;  
+        }
+    </script>
+</body>
+</html>
+

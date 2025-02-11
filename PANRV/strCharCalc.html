@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samir-PANRV/String Character Counter</title>
+</head>
+<body>
+    <h2>Enter a String to Count Characters</h2>
+    <input type="text" id="inputString" placeholder="Enter your string">
+    <button onclick="countChars(inputString.value)">Count Characters</button>
+    <script>
+        function countChars(str) {
+            let charCount = str.length;
+            alert("Character Count: " + charCount);
+        }
+    </script>
+</body>
+</html>

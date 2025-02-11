@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Samir-PARV/Age Calculator</title>
+</head>
+<body>
+    <h2>Age Calculator</h2>
+    <input type="number" id="birthYear" placeholder="Enter birth year">
+    <button onclick="calculateAge()">Calculate Age</button>
+    <p id="result"></p>
+
+    <script>
+        function calculateAge() {
+            let birthYear = Number(document.getElementById('birthYear').value);
+            let age = getAge(birthYear);
+            document.getElementById('result').innerHTML = "Your age is: " + age;
+        }
+
+        function getAge(birthYear) {
+            let currentYear = new Date().getFullYear();
+            return currentYear - birthYear;
+        }
+    </script>
+</body>
+</html>

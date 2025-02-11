@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samir-PANRV/Reverse String</title>
+</head>
+<body>
+    <h2>Enter a String to Reverse</h2>
+    <input type="text" id="samirxyz" placeholder="Enter your string">
+    <button onclick="revStr(samirxyz.value)">Reverse String</button>
+    <script>
+        function revStr(str) {
+            if(str !== ""){
+                let reversed = str.split("").reverse().join("");
+                alert("Reverse of " + str + " is " + reversed);
+            }
+            else{
+                alert("Please enter a string!");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Samir-PARV/Temperature Converter</title>
+</head>
+<body>
+    <h2>Temperature Converter</h2>
+    <input type="number" id="temp" placeholder="Enter temperature">
+    <select id="from">
+        <option value="C">Celsius</option>
+        <option value="F">Fahrenheit</option>
+    </select>
+    <button onclick="convert()">Convert</button>
+    <p id="result"></p>
+
+    <script>
+        function convert() {
+            let temp = Number(document.getElementById('temp').value);
+            let from = document.getElementById('from').value;
+            let result;
+
+            if (from === 'C') {
+                result = (temp * 9/5) + 32;
+                document.getElementById('result').innerHTML = temp + "°C = " + result + "°F";
+            } else {
+                result = (temp - 32) * 5/9;
+                document.getElementById('result').innerHTML = temp + "°F = " + result + "°C";
+            }
+        }
+    </script>
+</body>
+</html>

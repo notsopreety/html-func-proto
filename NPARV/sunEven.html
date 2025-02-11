@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samir-NPARV/Sum of Even Numbers</title>
+</head>
+<body>
+    <button onclick="showEvenSum()">Calculate Sum of Even Numbers</button>
+    <script>
+        function evenSum() {
+            let num = prompt("Enter a number to calculate the sum of all even numbers up to it:");
+            num = parseInt(num);
+            if (isNaN(num) || num < 0) {
+                alert("Please enter a valid non-negative number.");
+                return 0;
+            }
+            let sum = 0;
+            for (let i = 2; i <= num; i += 2) {
+                sum += i;
+            }
+            return sum;
+        }
+        function showEvenSum() {
+            let result = evenSum();
+            alert("The sum of all even numbers up to the entered number is: " + result);
+        }
+    </script>
+</body>
+</html>
+

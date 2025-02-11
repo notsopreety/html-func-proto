@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samir-NPARV/Word Count</title>
+</head>
+<body>
+    <button onclick="samirxyz()">Count Words</button>
+    <script>
+        function wordCount() {
+            let str = prompt("Enter a string to count the words:");
+            let words = str.trim().split(/\s+/);
+            return words.length;
+        }
+        function samirxyz() {
+            let result = wordCount();
+            alert("The number of words is: " + result);
+        }
+    </script>
+</body>
+</html>
+

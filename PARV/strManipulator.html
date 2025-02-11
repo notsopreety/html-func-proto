@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Samir-PARV/String Manipulator</title>
+</head>
+<body>
+    <h2>String Manipulator</h2>
+    <input type="text" id="inputText" placeholder="Enter text">
+    <button onclick="processText('upper')">To Uppercase</button>
+    <button onclick="processText('lower')">To Lowercase</button>
+    <p id="result"></p>
+    <script>
+        function processText(type) {
+            let text = document.getElementById('inputText').value;
+            let result = type === 'upper' ? convertToUpper(text) : convertToLower(text);
+            document.getElementById('result').innerHTML = "Result: " + result;
+        }
+        function convertToUpper(text) {
+            return text.toUpperCase();
+        }
+        function convertToLower(text) {
+            return text.toLowerCase();
+        }
+    </script>
+</body>
+</html>

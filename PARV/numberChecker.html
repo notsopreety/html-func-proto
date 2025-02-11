@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Samir-PARV/Number Checker</title>
+</head>
+<body>
+    <h2>Number Checker</h2>
+    <input type="number" id="numberInput" placeholder="Enter a number">
+    <button onclick="checkNumber()">Check Number</button>
+    <p id="result"></p>
+
+    <script>
+        function checkNumber() {
+            let num = Number(document.getElementById('numberInput').value);
+            let evenOdd = checkEvenOdd(num);
+            let posNeg = checkPositiveNegative(num);
+            document.getElementById('result').innerHTML = 
+                "The number " + num + " is " + evenOdd + " and " + posNeg;
+        }
+
+        function checkEvenOdd(number) {
+            return number % 2 === 0 ? "even" : "odd";
+        }
+
+        function checkPositiveNegative(number) {
+            if (number > 0) return "positive";
+            if (number < 0) return "negative";
+            return "zero";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samir-NPARV/Multiplication Table of 17</title>
+</head>
+<body>
+    <button onclick="showMultiplicationTable()">Table of 17</button>
+    <div class="table-container" id="multable"></div>
+    <script>
+        function multiplicationTable() {
+            let table = "";
+            let number = 17;
+            for (let i = 1; i <= 10; i++) {
+                table += number + " x " + i + " = " + (number * i) + "<br>";
+            }
+            return table; 
+        }
+        function showMultiplicationTable() {
+            let result = multiplicationTable();  
+            document.getElementById("multable").innerHTML = "<h3>Multiplication Table of 17</h3>" + result;  
+        }
+    </script>
+</body>
+</html>

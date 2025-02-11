@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samir-NPARV/Vowel Counter</title>
+</head>
+<body>
+    <h2>Enter a String to Count Vowels</h2>
+    <input type="text" id="inputString" placeholder="Enter your string">
+    <button onclick="showVowelCount()">Count Vowels</button>
+    <script>
+        function countVowels() {
+            const str = document.getElementById("inputString").value;
+            const vowels = 'aeiouAEIOU';
+            let count = 0;
+            for (const char of str) {
+                if (vowels.includes(char)) {
+                    count++;
+                }
+            }
+            return count;
+        }
+        function showVowelCount() {
+            const vowelCount = countVowels();
+            alert(`Vowel Count in ${inputString.value}: ${vowelCount}`);
+        }
+    </script>
+</body>
+</html>
+

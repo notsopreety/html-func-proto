@@ -39,7 +39,7 @@ To get a local copy up and running, follow these simple steps:
 
    Open any of the `.html` files in your preferred web browser to view and interact with the projects.
    
-***[Sample Document](./SamirXYZ.docx)***
+***[Sample Document](./SamirXYZ.pdf)***
 
 ## Technologies Used
 

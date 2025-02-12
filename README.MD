@@ -5,11 +5,11 @@ Welcome to the **JavaScript Function Prototype in HTML** by **Samir Thakuri**. T
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [Projects Overview](#projects-overview)
-  - [NPANRV](#npanrv)
-  - [NPARV](#nparv)
-  - [PANRV](#panrv)
-  - [PARV](#parv)
+- [Project Containing](#JavaScript-Function-Prototype-in-HTML)
+  - [Not Passing Argument Not Returning Value (NPANRV)](#JavaScript-Function-Prototype-in-HTML)
+  - [Not Passing Argument Returning Value (NPARV)](#JavaScript-Function-Prototype-in-HTML)
+  - [Passing Argument Not Returning Value (PANRV)](#JavaScript-Function-Prototype-in-HTML)
+  - [Passing Argument Returning Value (PARV)](#JavaScript-Function-Prototype-in-HTML)
 - [Getting Started](#getting-started)
 - [Technologies Used](#technologies-used)
 - [Author](#author)
